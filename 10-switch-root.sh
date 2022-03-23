@@ -1,9 +1,8 @@
 #!/bin/bash
 
-if [[ $(whoami) = 'root' ]]; then exit 2; fi
+if [[ $(whoami) != 'root' ]]; then exit 2; fi
 
 mkdir /tmp/menhera/mnt/old
-
 
 modprobe btrfs
 

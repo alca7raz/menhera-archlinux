@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $(whoami) = 'root' ]]; then exit 2; fi
+if [[ $(whoami) != 'root' ]]; then exit 2; fi
 
 echo -e "Choose your favorite repository mirror:"
 echo -e " 1 ) Aliyun (China)"

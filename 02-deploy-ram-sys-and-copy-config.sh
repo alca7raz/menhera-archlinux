@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $(whoami) = 'root' ]]; then exit 2; fi
+if [[ $(whoami) != 'root' ]]; then exit 2; fi
 
 if [[ ! -f bootstrap.tar.gz ]]; then exit 3; fi
 
